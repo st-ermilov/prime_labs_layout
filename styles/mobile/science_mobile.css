@@ -1,0 +1,577 @@
+@font-face {
+  font-family: "GT America Trial";
+  src: url(../fonts/GT-America-Compressed-Regular-Trial.otf);
+}
+@font-face {
+  font-family: "GT America Trial Thin";
+  src: url(../fonts/GT-America-Compressed-Thin-Trial.otf);
+}
+@font-face {
+  font-family: "Maison Neue Extended";
+  src: url(../fonts/MaisonNeueExtendedTRIAL-Demi.otf);
+}
+@font-face {
+  font-family: "Maison Neue Extended Extra Bold";
+  src: url(../fonts/MaisonNeueExtendedExtraBold.otf);
+}
+@font-face {
+  font-family: "GT America Trial Standard Regular";
+  src: url(../fonts/GT-America-Standard-Regular-Trial.otf);
+}
+@font-face {
+  font-family: "GT America Trial Standard Light";
+  src: url(../fonts/GT-America-Standard-Light-Trial.otf);
+}
+@font-face {
+  font-family: "GT America Thin Italic";
+  src: url(../fonts/GT-America-Standard-Thin-Italic-Trial.otf);
+}
+@font-face {
+  font-family: "GT America Light Italic";
+  src: url(../fonts/GT-America-Standard-Light-Italic-Trial.otf);
+}
+
+@import url("https://fonts.cdnfonts.com/css/maison-neue");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Josefin+Sans:ital,wght@0,400;1,300&family=Montserrat:ital,wght@1,900&family=Open+Sans:wght@300;400;500;600;700&family=Sofia+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap");
+
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+.lock {
+  overflow: hidden;
+}
+/* Header start */
+
+.top_offer {
+  display: flex;
+  height: 30px;
+  background-color: #e9ebf3;
+  font-family: "GT America Trial Thin";
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 9px;
+  line-height: 13px;
+  letter-spacing: 1px;
+}
+
+.navigation_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 72px;
+  margin: 0px 24px 0px 24px;
+}
+.navigation_bar_container_desktop {
+  display: none;
+}
+.shop_points_bar {
+  display: none;
+}
+.stick_1,
+.stick_2 {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  margin-bottom: 6px;
+}
+.stick_3 {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+}
+/* menu start */
+.menu_container {
+  background-color: white;
+  height: 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 800ms ease;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.menu_show {
+  height: 100vh;
+}
+
+.menu_navbar {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 25.06px 0px 24px;
+}
+
+.menu_search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 24px 0px 24px;
+  min-height: 60px;
+  background-color: #faf7f4;
+}
+
+.inp_search {
+  border: none;
+  outline: none;
+  background-color: #faf7f4;
+  font-family: "Maison Neue Extended";
+}
+.inp_search::placeholder {
+  color: black;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+}
+.inp_search:focus::-webkit-input-placeholder,
+.inp_search:hover::-webkit-input-placeholder {
+  color: transparent;
+}
+.menu_points {
+  margin: 31px 24px 30px 24px;
+  border-bottom: 2px solid #e9ebf3;
+  display: grid;
+  grid-template-rows: 1fr repeat(5, auto);
+  row-gap: 36px;
+}
+
+.menu_points div a {
+  text-decoration: none;
+  color: black;
+  font-family: "Maison Neue Extended";
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.point_shop {
+  position: relative;
+  font-family: "Maison Neue Extended";
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.shop_sections {
+  max-height: 0;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 20px;
+  transition: all 800ms ease;
+}
+.shop_sections a {
+  font-family: "GT America Trial Standard Light" !important;
+  font-size: 13px !important;
+  line-height: 18px !important;
+}
+.show_menu_sections {
+  max-height: 200px;
+  padding: 21px 0px 0px 0px;
+}
+.menu_contact {
+  margin-bottom: 30px;
+}
+.menu_account {
+  display: flex;
+  justify-content: start;
+  gap: 12px;
+  margin: 30px 0px 0px 24px;
+  min-height: 32px;
+}
+.menu_account a {
+  text-decoration: none;
+  color: black;
+  font-family: "Maison Neue Extended";
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  align-self: center;
+}
+/* menu end */
+.breadcrumbs_container {
+  height: 48px;
+  border-top: 1px solid #e9ebf3;
+}
+.breadcrumbs_wrapper {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-left: 24px;
+}
+.breadcrumbs_wrapper a {
+  color: black;
+  text-decoration: none;
+  font-family: "GT America Trial Standard Light";
+  font-size: 12px;
+  line-height: 15.1px;
+  font-weight: 400;
+}
+.now_crumb {
+  color: grey !important;
+}
+/* Header end */
+
+/* Main start */
+.top_proposition_container {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #f7f8fb 76.77%, #c6eaf7 23.23%);
+}
+.top_proposition_wrapper {
+  padding: 60px 24px 0px 24px;
+  display: flex;
+  flex-direction: column;
+}
+.top_proposition_text h1 {
+  font-family: "Maison Neue Extended";
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  padding-bottom: 12px;
+}
+.top_proposition_text p {
+  font-family: "GT America Trial Standard Regular";
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+.top_proposition_btn {
+  background-color: black;
+  padding: 20px 39.9px 20px 40.01px;
+  border: none;
+  margin-bottom: 40px;
+}
+.top_proposition_btn a {
+  text-decoration: none;
+  color: white;
+  font-family: "GT America Trial Standard Light";
+  font-size: 13px;
+  line-height: 16px;
+}
+.top_proposition_img {
+  display: grid;
+  justify-items: center;
+}
+.ingredients_wrapper {
+  padding: 60px 24px;
+}
+.ingredients_title {
+  display: grid;
+  justify-items: center;
+}
+.ingredients_title h2 {
+  font-family: "GT America Trial Standard Regular";
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  padding-bottom: 12px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.ingredients_title p {
+  font-family: "GT America Trial Standard Regular";
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.ingredients_btn {
+  background-color: black;
+  padding: 20px 40.22px 20px 39.78px;
+  border: none;
+}
+.ingredients_btn a {
+  text-decoration: none;
+  color: white;
+  font-family: "GT America Trial Standard Light";
+  font-size: 13px;
+  line-height: 16px;
+}
+.ingredients_cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 12px;
+  padding-top: 48px;
+}
+.ingredients_cards_first_column,
+.ingredients_cards_second_column {
+  display: grid;
+  row-gap: 12px;
+}
+.ingredient_card_hidden_row {
+  display: none;
+}
+.ingredient_card {
+  display: grid;
+  height: 270px;
+  min-width: 158px;
+  background-color: #faf7f4;
+  position: relative;
+}
+.plants {
+  justify-self: center;
+}
+.i_i_btn {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 23.25px;
+  height: 23.25px;
+}
+.tippy-box {
+  background-color: white;
+  color: black;
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  font-family: "GT America Trial Standard Light";
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+}
+.tippy-content {
+  padding: 25.5px 24px 38px 24px;
+}
+.tippy-box[data-placement^="top"] > .tippy-arrow::before {
+  border-top-color: white;
+  transform: scale(2);
+}
+.tippy-box[data-placement^="bottom"] > .tippy-arrow::before {
+  border-bottom-color: white;
+  transform: scale(2);
+}
+.tippy-box[data-placement^="left"] > .tippy-arrow::before {
+  border-bottom-color: white;
+  transform: scale(2);
+}
+.tippy-box[data-placement^="right"] > .tippy-arrow::before {
+  border-bottom-color: white;
+  transform: scale(2);
+}
+.ingredient_card h4 {
+  min-width: 132px;
+  font-family: "Maison Neue Extended";
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding-bottom: 12px;
+  margin: 12px 14px 12px 12px;
+  border-bottom: 2px solid black;
+}
+.ingredient_card p {
+  font-family: "GT America Trial Standard Regular";
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  margin: 0px 14px 24px 12px;
+}
+
+.phd_review_container {
+  background-color: #faf7f4;
+}
+.phd_review_wrapper {
+  padding: 24px 24px 60px 24px;
+}
+.phd_text_review h2 {
+  font-family: "GT America Trial Standard Regular";
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 24px 0px 12px 0px;
+}
+.phd_text_review h4 {
+  font-family: "Maison Neue Extended";
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding-bottom: 24px;
+  border-bottom: 2px solid black;
+}
+.phd_text_review p {
+  font-family: "GT America Trial Standard Regular";
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  padding-top: 24px;
+}
+/*---------------------------------------------------------- sssssss */
+.join_us_wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 48px 24px;
+  background-color: #e9ebf3;
+  justify-items: center;
+}
+.join_us_wrapper h3 {
+  font-family: "Maison Neue Extended";
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 12px;
+}
+.join_us_wrapper p {
+  font-family: "GT America Trial Standard Light";
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 28px;
+}
+.join_us_input {
+  margin-bottom: 24px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid black;
+  padding-bottom: 12px;
+  color: #707784;
+  font-family: "GT America Light Italic";
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+}
+.join_us_input::placeholder {
+  font-family: "GT America Light Italic";
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+}
+.join_us_input:focus::-webkit-input-placeholder,
+.join_us_input:hover::-webkit-input-placeholder {
+  color: transparent;
+}
+.join_us_wrapper a {
+  text-decoration: none;
+  color: black;
+  font-family: "GT America Trial Standard Regular";
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 0px 10.09px 5px 9.91px;
+  border-bottom: 4px solid black;
+  text-align: center;
+  align-self: center;
+  white-space: nowrap;
+}
+.join_us_right {
+  display: flex;
+  flex-direction: column;
+}
+/* Main end */
+
+/* Footer start */
+footer {
+  background-color: black;
+  color: white;
+}
+.footer_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.footer_logo {
+  padding: 48px 0px 24.54px 24px;
+}
+.footer_text {
+  padding: 0px 24px 31px 25px;
+}
+.footer_text p {
+  font-family: "GT America Trial Standard Light";
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.footer_points {
+  padding-bottom: 39px;
+  margin: 0px 27px 0px 24px;
+  display: grid;
+  gap: 18px;
+  border-bottom: 2px solid #707784;
+}
+.point_company,
+.point_support,
+.point_legal,
+.point_social {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  transition: all 700ms ease;
+}
+.point_company img,
+.point_support img,
+.point_legal img,
+.point_social img {
+  justify-self: end;
+}
+.point_company h2,
+.point_support h2,
+.point_legal h2,
+.point_social h2 {
+  font-family: "Maison Neue Extended";
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.point_company_points,
+.point_support_points,
+.point_legal_points,
+.point_social_points {
+  max-height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0px 0px 0px 20px;
+  transition: all 700ms ease;
+}
+.point_company_points a,
+.point_support_points a,
+.point_legal_points a,
+.point_social_points a {
+  text-decoration: none;
+  color: white;
+  font-family: "Maison Neue Extended";
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.points_show {
+  max-height: 100px;
+  padding: 10px 0px 0px 20px;
+}
+.footer_end {
+  margin: 0px 24px 9px 25px;
+}
+.footer_end p {
+  padding: 24px 0px 23px 0px;
+  font-family: "GT America Trial Standard Light";
+  font-size: 11px;
+  line-height: 13.2px;
+  font-weight: 400;
+}
+/* Footer end */

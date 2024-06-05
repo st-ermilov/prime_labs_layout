@@ -1,0 +1,761 @@
+@media screen and (min-width: 1024px) {
+  header {
+    background-color: #e9ebf3;
+  }
+  .navigation_bar_container {
+    display: none;
+  }
+
+  .navigation_bar_container_desktop {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0px 40px;
+  }
+  .left_nav_bar {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  .right_nav_bar {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+
+  #point_shop,
+  .left_nav_bar a,
+  .right_nav_bar a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-family: "GT America Trial Standard Regular";
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 200ms ease;
+  }
+  #point_shop:hover,
+  .left_nav_bar a:hover,
+  .right_nav_bar a:hover {
+    padding-bottom: 5px;
+    border-bottom: 4px solid white;
+  }
+  .right_nav_bar img {
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  .right_nav_bar img:hover {
+    transform: scale(1.2);
+  }
+  .menu_contact {
+    margin: 0;
+  }
+  .top_text_container {
+    margin: 0px 84px;
+  }
+  .top_text_container h1 {
+    font-size: 50px;
+    line-height: 57px;
+    margin-bottom: 24px;
+  }
+  .top_text_container p {
+    margin-bottom: 36px;
+    text-shadow: none;
+    max-width: 448px;
+  }
+  .top_buy_button {
+    background-color: white;
+    padding: 20px 39.9px 20px 40.01px;
+    border: none;
+    cursor: pointer;
+    transition: all 200ms ease;
+  }
+  .top_buy_button:hover {
+    background-color: #e9ebf3;
+    padding: 20px 35.9px 20px 36.01px;
+  }
+  .top_buy_button a {
+    text-decoration: none;
+    color: black;
+    font-family: "GT America Trial Standard Light";
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  /* Shop slider start */
+  .shop_points_bar {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background-color: white;
+    position: absolute;
+    top: 100px;
+    transition: all 800ms ease;
+    z-index: 3;
+  }
+  .show_shop {
+    height: 380px;
+  }
+  .shop_points_bar_text {
+    margin: 50px 60px 152px 44px;
+  }
+  .shop_points_bar_text h3 {
+    font-family: "Maison Neue Extended";
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 700;
+  }
+  .text_box_container {
+    height: 124px;
+    margin-top: 35px;
+    overflow: visible;
+  }
+  .text_box_point h4 {
+    font-family: "GT America Trial Standard Light";
+    font-size: 13px;
+    line-height: 18px;
+    white-space: nowrap;
+    padding-bottom: 5px;
+    display: inline;
+    cursor: pointer;
+    transition: all 300ms ease;
+  }
+  .text_box_point.swiper-slide-thumb-active h4 {
+    border-bottom: 4px solid #c4c4c4;
+  }
+  .drugs_container {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .performance_wrapper,
+  .longevity_wrapper,
+  .immunity_wrapper {
+    width: 100%;
+  }
+  .performance_slide,
+  .longevity_slide,
+  .immunity_slide {
+    min-height: 255px;
+    max-width: 250px;
+    position: relative;
+  }
+  .shop_now {
+    display: grid;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 40px;
+    background-color: yellow;
+    text-align: center;
+    height: 0px;
+    overflow: hidden;
+    transition: all 200ms ease;
+    font-family: "GT America Trial Standard Regular";
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    cursor: pointer;
+  }
+  .shop_now a {
+    text-decoration: none;
+    color: black;
+  }
+  .performance_slide:hover .shop_now,
+  .longevity_slide:hover .shop_now,
+  .immunity_slide:hover .shop_now {
+    height: 56px;
+  }
+  .performance_slide:hover,
+  .longevity_slide:hover,
+  .immunity_slide:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  .drug_card {
+    max-width: 250px;
+    min-height: 255px;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    justify-items: center;
+    background-color: #e9ebf3;
+  }
+  .performance_slide h3,
+  .longevity_slide h3,
+  .immunity_slide h3 {
+    margin-top: 18px;
+    font-family: "Maison Neue Extended";
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .drug_card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* Shop slider end */
+
+  /* Theses slider start */
+  .thes_cont {
+    background-color: #e9ebf3;
+  }
+  .theses_container {
+    height: 312px;
+    display: flex;
+    flex-direction: row;
+    background-color: #e9ebf3;
+    align-items: center;
+    margin: 0;
+    padding: 40px 40px;
+  }
+  .theses_card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    width: 192px;
+  }
+  .theses_wrapper {
+    height: 152px;
+  }
+  .theses {
+    height: 60px;
+  }
+  .theses img {
+    width: 80px;
+  }
+  .theses_container div h3 {
+    font-family: "Maison Neue Extended";
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+    text-align: center;
+  }
+  /* Theses slider end */
+
+  .second_theses_container {
+    margin: 8px 0px 0px 0px;
+  }
+  .buster,
+  .back_bust_img {
+    display: flex;
+    flex-direction: row;
+  }
+  .back_bust_img {
+    margin-bottom: 0;
+    min-width: 512px;
+    height: 512px;
+  }
+
+  .bust_text {
+    padding: 108px 40px 0px 101px;
+  }
+  .buster h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .buster h4 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .buster p {
+    margin: 24px 0px 36px 0px;
+  }
+  .buy_buster_button {
+    cursor: pointer;
+    margin-bottom: 0px;
+    transition: all 200ms ease;
+  }
+  .buy_buster_button:hover {
+    padding: 20px 35.9px 20px 36.01px;
+    background-color: #4a4a4a;
+  }
+
+  .third_theses_container {
+    margin: 0;
+  }
+  .yoga,
+  .yoga_img {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .yoga_img {
+    margin-bottom: 0;
+  }
+  .yoga_img img {
+    min-width: 512px;
+    height: 512px;
+    object-fit: cover;
+  }
+  .yoga_text {
+    padding: 100px 116px 0px 40px;
+  }
+  .yoga h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .yoga h4 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .yoga p {
+    margin: 24px 0px 36px 0px;
+  }
+  .buy_yoga_button {
+    margin-bottom: 0px;
+    transition: all 200ms ease;
+    cursor: pointer;
+  }
+  .buy_yoga_button:hover {
+    padding: 20px 35.9px 20px 36.01px;
+    background-color: #4a4a4a;
+  }
+
+  .ingredients_container {
+    padding: 0;
+    display: flex;
+    min-height: 645px;
+  }
+  .text_ingredients_container {
+    padding: 120px 40px 0px 40px;
+  }
+
+  .ingredients h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .ingredients h4 {
+    font-size: 20px;
+    line-height: 25px;
+    white-space: nowrap;
+  }
+  .ingredients p {
+    margin: 24px 0px 36px 0px;
+  }
+  .text_ingredients_container a {
+    transition: all 200ms ease;
+  }
+  .text_ingredients_container a:hover {
+    color: #707784;
+    border-bottom: 4px solid #707784;
+  }
+  .ingredients_slider {
+    padding: 0px;
+    height: 405px;
+    min-width: 44%;
+    margin: 120px 0px;
+  }
+  .ingredients_card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 300px;
+    height: 405px;
+  }
+
+  .story_container {
+    margin: 0;
+    background-color: #e9ebf3;
+  }
+  .story,
+  .story_img {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .story_img {
+    margin: 0;
+  }
+  .story_img img {
+    width: 552px;
+    height: 552px;
+    margin: 40px;
+  }
+  .story_text {
+    margin: 0;
+    margin: 80px 119px 0px 40px;
+  }
+  .story_text h1 {
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 36px;
+  }
+
+  .story_text p {
+    font-family: "GT America Trial Standard Regular";
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+    margin: 0;
+  }
+  .story_button {
+    background-color: black;
+    padding: 20px 39.9px 20px 40.01px;
+    border: none;
+    margin: 24px 0px 60px 0px;
+    cursor: pointer;
+    transition: all 200ms ease;
+  }
+  .story_button:hover {
+    background-color: #4a4a4a;
+    padding: 20px 35.9px 20px 36.01px;
+  }
+  .story_button a {
+    text-transform: uppercase;
+  }
+
+  .featured {
+    display: flex;
+    gap: 100px;
+    padding: 60px 0px;
+    justify-content: center;
+  }
+  .featured h1 {
+    font-family: "Maison Neue Extended";
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 700;
+    padding: 0;
+  }
+  .featured_1_string {
+    display: flex;
+    gap: 100px;
+    padding-bottom: 0;
+  }
+  .featured_2_string {
+    display: flex;
+    gap: 100px;
+    padding-bottom: 0;
+  }
+
+  .review_slider_container {
+    padding-bottom: 30px;
+  }
+  .review_slider_container h1 {
+    font-size: 30px;
+    line-height: 35px;
+    padding: 100px 0px 24px 0px;
+  }
+  .review_slider_container a:hover {
+    color: Grey;
+    border-bottom: 4px solid Grey;
+  }
+  .review_slider {
+    padding-top: 48px;
+    margin: 0 auto;
+    width: 68.3%;
+    padding-bottom: 62px;
+  }
+  .review_card {
+    display: flex;
+    flex-direction: column;
+    height: 312px;
+    width: 400px;
+    background-color: white;
+    align-self: center;
+    margin: 0 auto;
+  }
+  .bottom_slider_container {
+    margin-bottom: 40px;
+    margin-left: 40px;
+  }
+  .bottom_slider_container a {
+    font-size: 30px;
+    line-height: 35px;
+    margin: 100px 0px 60px 0px;
+  }
+  .bottom_slider .swiper {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .bottom_slide img {
+    width: 408px;
+  }
+
+  .join_us_wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 40px;
+    background-color: #e9ebf3;
+    justify-items: none;
+    justify-content: space-between;
+    min-height: 200px;
+  }
+  .join_us_left {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0px 82px 0px;
+  }
+  .join_us_wrapper h3 {
+    font-size: 20px;
+    line-height: 25px;
+    text-align: start;
+  }
+  .join_us_wrapper p {
+    text-align: start;
+    padding-bottom: 0;
+  }
+  .join_us_right {
+    display: flex;
+    flex-direction: row;
+    padding: 80px 0px 79px 0px;
+    gap: 24px;
+  }
+  .join_us_input {
+    margin-bottom: 0;
+    padding-bottom: 18px;
+    color: #707784;
+    min-width: 430px;
+  }
+  .join_us_input::placeholder {
+    transition: all 200ms ease;
+  }
+
+  .join_us_wrapper a {
+    padding-top: 16px;
+    transition: all 200ms ease;
+  }
+  .join_us_wrapper a:hover {
+    color: grey;
+    border-bottom: 4px solid grey;
+  }
+
+  /* Footer start */
+
+  .footer_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .logo_and_text {
+    padding: 80px 0px 0px 40px;
+  }
+  .footer_logo {
+    padding: 0px 0px 24px 0px;
+  }
+  .footer_text {
+    padding: 0;
+  }
+  .footer_points {
+    padding-bottom: 0;
+    padding: 80px 40px 60px 0px;
+    margin: 0;
+    display: flex;
+    gap: 72px;
+    border-bottom: none;
+  }
+
+  .company,
+  .support,
+  .legal,
+  .social {
+    display: flex;
+    flex-direction: column;
+  }
+  .point_company,
+  .point_support,
+  .point_legal,
+  .point_social {
+    display: flex;
+    align-items: center;
+    transition: all 700ms ease;
+  }
+  .point_company h2,
+  .point_support h2,
+  .point_legal h2,
+  .point_social h2 {
+    padding-bottom: 16px;
+  }
+  .point_company img,
+  .point_support img,
+  .point_legal img,
+  .point_social img {
+    display: none;
+  }
+
+  .point_company_points,
+  .point_support_points,
+  .point_legal_points,
+  .point_social_points {
+    max-height: 100%;
+    padding: 0;
+  }
+  .point_company_points a,
+  .point_support_points a,
+  .point_legal_points a,
+  .point_social_points a {
+    font-family: "GT America Trial Standard Regular";
+    font-size: 14px;
+    line-height: 17.61px;
+    letter-spacing: 0;
+    text-transform: capitalize;
+    white-space: nowrap;
+    transition: all 200ms ease;
+  }
+  .point_company_points a:hover,
+  .point_support_points a:hover,
+  .point_legal_points a:hover,
+  .point_social_points a:hover {
+    color: #707784;
+  }
+  .points_show {
+    padding: 0;
+  }
+  .footer_end {
+    margin: 0px 40px;
+  }
+  .footer_end p {
+    border-top: 2px solid #707784;
+    padding: 21px 0px 21px 0px;
+    font-family: "Open Sans";
+    font-size: 11px;
+    line-height: 150%;
+    font-weight: 400;
+  }
+  /* Footer end */
+}
+@media screen and (min-width: 1440px) {
+  .wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .navigation_bar_container_desktop {
+    padding: 0px 84px;
+  }
+  .left_nav_bar {
+    gap: 40px;
+  }
+  .top_text_container {
+    margin: 0px 84px;
+  }
+
+  /* Shop slider start */
+  .shop_points_bar_text {
+    margin: 50px 226px 152px 74px;
+  }
+  .shop_points_bar {
+    max-width: 1440px;
+  }
+  /* Shop slider end */
+
+  /* Theses slider start */
+  .thes_cont {
+    background-color: #e9ebf3;
+  }
+  .theses_container {
+    padding: 80px 84px;
+  }
+  /* Theses slider end */
+
+  .second_theses_container {
+    margin: 8px 0px 0px 0px;
+  }
+  .back_bust_img {
+    margin-bottom: 0;
+    min-width: 720px;
+    height: 720px;
+  }
+  .bust_text {
+    padding: 108px 99px 0px 101px;
+  }
+  .yoga_img img {
+    min-width: 720px;
+    height: 720px;
+    object-fit: cover;
+  }
+  .yoga_text {
+    padding: 100px 116px 0px 88px;
+  }
+
+  .text_ingredients_container {
+    padding: 120px 98px 0px 84px;
+  }
+
+  .ingredients_slider {
+    padding: 0px;
+    height: 405px;
+    min-width: 50.83%;
+    margin: 120px 0px;
+  }
+
+  .story_container {
+    margin: 0;
+    background-color: #e9ebf3;
+  }
+
+  .story_img img {
+    width: 552px;
+    height: 552px;
+    margin: 84px;
+  }
+  .story_text {
+    margin: 100px 119px 0px 84px;
+  }
+
+  .featured {
+    display: flex;
+    gap: 100px;
+    padding: 60px 0px;
+    justify-content: center;
+  }
+  .review_slider_container h1 {
+    font-size: 30px;
+    line-height: 35px;
+    padding: 100px 0px 24px 0px;
+  }
+  .review_slider_container a:hover {
+    color: Grey;
+    border-bottom: 4px solid Grey;
+  }
+  .review_slider {
+    padding-top: 48px;
+    margin: 0 auto;
+    width: 68.3%;
+    padding-bottom: 62px;
+  }
+  .review_card {
+    width: 288px;
+    margin: 0;
+  }
+
+  .bottom_slider_container {
+    margin-bottom: 80px;
+    margin-left: 84px;
+  }
+
+  .join_us_wrapper {
+    padding: 0px 84px;
+  }
+  /* Footer start */
+
+  .footer_wrapper {
+    gap: 320px;
+  }
+  .logo_and_text {
+    padding: 80px 0px 0px 84px;
+  }
+  .footer_points {
+    padding: 80px 108px 60px 0px;
+  }
+  .footer_end {
+    margin: 0px 84px 0px 84px;
+  }
+
+  /* Footer end */
+}
