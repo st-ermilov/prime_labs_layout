@@ -111,8 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // More info start
   tippy(".info_btn", {
-    content:
-      "Приходишь после перерыва в два года в качалку и думаешь, чтобы быстро восстановишь форму из-за мышечной памяти. Но на деле оказывается, что у тебя мышечная амнезия.",
+    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam blanditiis consequatur excepturi fugit illo ipsa neque nostrum recusandae sit vero!\n',
     placement: "bottom",
   });
   // More info end
